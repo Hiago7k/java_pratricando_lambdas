@@ -1,7 +1,7 @@
 class Main{
     static void main() {
-        System.out.println("teste");
 
-
+        iMultiplicacao mult = (a,b) -> a * b;
+        System.out.println(mult.executar(3,5));
     }
 }

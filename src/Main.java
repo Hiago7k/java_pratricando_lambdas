@@ -8,7 +8,9 @@ class Main{
 
         //3 - Crie uma função lambda que receba uma string
         // e a converta para letras maiúsculas.
-        IConvertString maisculo = (texto) -> texto.toUpperCase();
-        System.out.println(maisculo.converter("teste"));
+      //  IConvertString maisculo = (texto) -> texto.toUpperCase();
+      //  System.out.println(maisculo.converter("teste"));
+
+        // 4 Palidromo
     }
 }

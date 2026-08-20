@@ -8,14 +8,12 @@ import static java.util.Collections.reverse;
 
 class Main{
     static void main() {
-        
-        Scanner  teclado = new Scanner(System.in);
-        System.out.println("Digite uma frase");
+
+
 
         StringBuilder testando = new StringBuilder();
-        IPalidromo converte = (str) -> testando.reverse().isEmpty();
-
-        System.out.println(converte.reverso("ab"));
-
+        IPalidromo converte = str -> str.equals(new StringBuilder(str).reverse().toString());
+        System.out.println(converte.reverso("radar"));
+        System.out.println(converte.reverso("java"));
     }
 }

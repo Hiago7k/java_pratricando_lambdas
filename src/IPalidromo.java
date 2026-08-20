@@ -1,5 +1,7 @@
+import java.util.List;
+
 @FunctionalInterface
 public interface IPalidromo {
-    String reverso(String frase);
+    boolean reverso(String str);
 }
 

@@ -1,16 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import static java.lang.Character.reverseBytes;
 import static java.lang.Character.toUpperCase;
+import static java.util.Collections.reverse;
 
 class Main{
     static void main() {
+        
+        Scanner  teclado = new Scanner(System.in);
+        System.out.println("Digite uma frase");
 
-        iMultiplicacao mult = (a,b) -> a * b;
-        System.out.println(mult.executar(3,5));
+        StringBuilder testando = new StringBuilder();
+        IPalidromo converte = (str) -> testando.reverse().isEmpty();
 
-        //3 - Crie uma função lambda que receba uma string
-        // e a converta para letras maiúsculas.
-      //  IConvertString maisculo = (texto) -> texto.toUpperCase();
-      //  System.out.println(maisculo.converter("teste"));
+        System.out.println(converte.reverso("ab"));
 
-        // 4 Palidromo
     }
 }
